@@ -10,6 +10,29 @@
 ### 邮箱:yelloxing@gmail.com
 ****
 
+如何引入？
+--------------------------------------
+如果你开发的是一个web项目，直接在页面引入打包后的文件后即可：
+
+```html
+<script src="./build/polyfill.js" type="text/javascript"></script>
+```
+
+如果你想通过npm方式管理：
+
+```bash
+npm install --save polyfill-es
+```
+
+如何使用？
+--------------------------------------
+```js
+// 调用处理方法
+keyboard_char(event, function (char) {
+    // todo
+});
+```
+
 ### 免责声明
 
 *   项目中部分数据（如图片等）来自互联网，如果侵犯到对应权益者请联系我们，方便我们及时删除！
