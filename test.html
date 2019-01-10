@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>keyboard-char.js / 测试页面</title>
+    <script src="keyboard-char.js"></script>
+</head>
+
+<body onkeydown="doIt()">
+    <script>
+        function doIt(event) {
+            event = event || window.event;
+            var keycode = event.keycode || event.which || event.charCode;
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            // 调用处理方法
+            keyboard_char(keycode, function (char) {
+                console.log(char);
+            });
+
+        }
+    </script>
+</body>
+
+</html>

@@ -2,6 +2,7 @@
   "name": "keyboard-char",
   "version": "0.0.0next",
   "description": "Turn the mouse button into readable text!",
+  "main": "keyboard-char.js",
   "keywords": [
     "keycode",
     "charcode",
