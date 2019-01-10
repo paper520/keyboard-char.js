@@ -44,7 +44,7 @@
 
     return function (event, doback) {
         var keycode = event.keycode || event.which || event.charCode;
-        var key = dictionary[keycode];
+        var key = dictionary[keycode]||keycode;
         if (key.constructor !== Array) key = [key, key];
         if (help_key.indexOf(key[0]) > -1) {
             return;
