@@ -1,0 +1,21 @@
+{
+  "name": "keyboard-char",
+  "version": "0.0.0next",
+  "description": "Turn the mouse button into readable text!",
+  "keywords": [
+    "keycode",
+    "charcode",
+    "KeyboardEvent",
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelloxing/keyboard-char.js.git"
+  },
+  "author": "心叶",
+  "email": "yelloxing@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yelloxing/keyboard-char.js/issues"
+  }
+}
