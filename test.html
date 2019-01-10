@@ -9,18 +9,23 @@
     <script src="keyboard-char.js"></script>
 </head>
 
-<body onkeydown="doIt()">
+<body>
+    <label>
+        输入的内容：
+    </label>
+    <textarea onkeydown="doIt()"></textarea>
     <script>
+
+        var textarea = document.getElementsByTagName('textarea')[0];
         function doIt(event) {
             event = event || window.event;
-            var keycode = event.keycode || event.which || event.charCode;
 
             event.preventDefault();
             event.stopPropagation();
 
             // 调用处理方法
-            keyboard_char(keycode, function (char) {
-                console.log(char);
+            keyboard_char(event, function (char) {
+                textarea.value += char;
             });
 
         }
