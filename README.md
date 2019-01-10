@@ -21,7 +21,7 @@
 如果你想通过npm方式管理：
 
 ```bash
-npm install --save polyfill-es
+npm install --save keyboard-char
 ```
 
 如何使用？
