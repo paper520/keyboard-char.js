@@ -29,7 +29,7 @@
         33: "pre", 34: "next", 35: "bottom", 36: "top",
 
         // 控制键
-        16: "shift", 17: "ctrl", 18: "alt", 91: "ctrl", 93: "ctrl", 9: "tab", 20: "lock", 32: "spacebar", 8: "enter", 27: "esc",
+        16: "shift", 17: "ctrl", 18: "alt", 91: "ctrl", 93: "ctrl", 9: "tab", 20: "lock", 32: "spacebar", 8: "delete", 13: "enter", 27: "esc",
 
         // 功能键
         112: "f1", 113: "f2", 114: "f3", 115: "f4", 116: "f5", 117: "f6", 118: "f7", 119: "f8", 120: "f9", 121: "f10", 122: "f11", 123: "f12",
@@ -44,7 +44,8 @@
 
     return function (event, doback) {
         var keycode = event.keycode || event.which || event.charCode;
-        var key = dictionary[keycode]||keycode;
+        console.log(keycode);
+        var key = dictionary[keycode] || keycode;
         if (key.constructor !== Array) key = [key, key];
         if (help_key.indexOf(key[0]) > -1) {
             return;
