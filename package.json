@@ -1,6 +1,6 @@
 {
   "name": "keyboard-char",
-  "version": "1.0.1",
+  "version": "1.0.1next",
   "description": "Turn the mouse button into readable text!",
   "main": "keyboard-char.js",
   "keywords": [
