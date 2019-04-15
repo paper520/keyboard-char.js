@@ -43,7 +43,7 @@
     var help_key = ["shift", "ctrl", "alt", "lock"];
 
     return function (event, doback) {
-        var keycode = event.keycode || event.which || event.charCode;
+        var keycode = event.keyCode || event.which;
         console.log(keycode);
         var key = dictionary[keycode] || keycode;
         if (key.constructor !== Array) key = [key, key];
